@@ -1,0 +1,68 @@
+.clients
+	padding: 90px 0 50px
+
+	&__title
+		margin-bottom: 90px
+
+	&__comment
+		display: flex
+		align-items: center;
+		justify-content: space-between
+		margin-bottom: 30px
+		&:nth-child(even)
+			.clients__comment-img
+				order: 2
+			.clients__comment-block
+				order: 1
+				left: 40px
+				&:before
+					border-width: 11px 0 11px 20px
+					border-color: transparent transparent transparent $gray-bg
+					right: -20px
+					left: auto
+
+	&__comment-img
+		background-color: $gray-bg
+		border-radius: 50%
+		overflow: hidden
+		height: $clients-comment-img-size
+		width: $clients-comment-img-size
+
+	&__comment-block
+		background-color: $gray-bg
+		left: -40px
+		padding: 36px 40px
+		position: relative
+		width: "calc(100% - 90px - %s)" % $clients-comment-img-size
+		&:before
+			content: ""
+			border-style: solid
+			border-width: 11px 20px 11px 0
+			border-color: transparent $gray-bg transparent transparent
+			transform: translateY(-50%)
+			position: absolute
+			left: -20px
+			top: 50%
+			width: 0
+			height: 0
+
+	&__comment-text
+		display: inline-block
+		font-size: 22px
+		line-height: 1.4
+		text-align: left
+		margin-bottom: 13px
+		position: relative
+		&:before
+			content: "“"
+			position: absolute
+			top: -5px
+			left: -15px
+		&:after
+			content: " ”"
+
+	&__comment-name
+		color: $main-green
+		&:before
+			content: "- "
+	

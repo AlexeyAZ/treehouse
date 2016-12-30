@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.js"],"names":["$","viewportChecker","classToAdd"],"mappings":"AAAAA,EAAE,YAAW;;AAEZA,GAAE,UAAF,EAAcC,eAAd,CAA8B;AAC7BC,cAAY;AADiB,EAA9B;AAIA,CAND","file":"main.js","sourcesContent":["$(function() {\r\n\r\n\t$('.project').viewportChecker({\r\n\t\tclassToAdd: 'project_img-animate',\r\n\t});\r\n\r\n});"]}

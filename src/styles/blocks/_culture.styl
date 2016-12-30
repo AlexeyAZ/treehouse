@@ -1,0 +1,55 @@
+.culture
+	background-color: $gray-bg
+	padding-top: 90px
+	padding-bottom: 100px
+
+	&__heading
+		margin-bottom: 10px
+
+	&__title
+		margin-bottom: 85px
+	
+	&__list
+		display: flex
+		flex-wrap: wrap
+		align-items: flex-start
+		justify-content: center
+
+	&__list-item
+		padding: 0 20px
+		width: 33%
+		&:nth-child(1)
+			.culture__list-img
+				background-image: url("../images/icon-music.png")
+				background-position: 42% center
+		&:nth-child(2)
+			.culture__list-img
+				background-image: url("../images/icon-lines.png")
+		&:nth-child(3)
+			.culture__list-img
+				background-image: url("../images/icon-star.png")
+				&:after
+					content: none
+
+	&__list-img
+		background-position: center
+		background-repeat: no-repeat
+		border: 3px solid $main-gray
+		border-radius: 50%
+		position: relative
+		margin: 0 auto 24px
+		height: $culture-list-img-size
+		width: $culture-list-img-size
+		&:after
+			content: ""
+			transform: translate(auto, -50%)
+			background-color: $main-gray
+			position: absolute;
+			top: 50%
+			left: calc(100% + 30px)
+			height: 3px
+			width: 170px
+			
+
+	&__list-heading
+		margin-bottom: 10px

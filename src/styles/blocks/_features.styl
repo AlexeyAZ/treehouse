@@ -1,0 +1,83 @@
+.features
+	color: white
+	position: relative
+	overflow: hidden
+
+	&__container
+		display: flex
+	
+	&__item
+		padding-top: 95px
+		padding-bottom: 100px
+		position: relative
+		&_left
+			width: 22%
+			&:before {
+				content: ""
+				background-color: $gear-bg
+				background-image: url("../images/gear.png")
+				background-size: 389px
+				background-position: right -195px center
+				background-repeat: no-repeat
+				position: absolute
+				top: 0
+				right: 0
+				height: 100%
+				width: 100vw
+			}
+		&_right
+			padding-left: 100px
+			width: 78%
+			&:before
+				content: ""
+				background-image: url("../images/features-bg.jpg")
+				background-position: center
+				background-size: cover
+				background-repeat: no-repeat
+				position: absolute
+				top: 0
+				left: 0
+				height: 100%
+				width: calc(100vw - 22%)
+				z-index: 1
+			&:after
+				content: ""
+				background-color: $intro-bg-overlay
+				position: absolute
+				top: 0
+				left: 0
+				height: 100%
+				width: calc(100vw - 22%)
+				z-index: 2
+
+	&__content
+		position: relative
+		z-index: 3
+		&:before
+			content: ""
+			position: absolute
+			top: 0;
+			left: 0;
+			height: 100%
+	
+	&__heading
+		margin-bottom: 30px
+	
+	&__title
+		margin-bottom: 18px
+
+	&__list
+		margin-bottom: 48px
+
+	&__list-item
+		background-image: url("../images/features-icon-check.png")
+		background-repeat: no-repeat
+		background-position: left center
+		display: flex
+		align-items: center
+		font-family: "RSReg"
+		font-size: 16px
+		margin-bottom: 2px
+		padding-left: 50px
+		min-height: 40px
+		width: 100%

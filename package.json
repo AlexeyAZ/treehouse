@@ -1,0 +1,29 @@
+{
+  "name": "new_project",
+  "version": "0.9.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "*",
+    "babel-preset-es2015": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-babel": "*",
+    "gulp-concat": "*",
+    "gulp-connect": "*",
+    "gulp-pug": "*",
+    "gulp-sass": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-watch": "*",
+    "gulp-rigger": "*"
+  },
+  "dependencies": {
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-stylus": "^2.6.0"
+  }
+}

@@ -1,0 +1,58 @@
+.project
+	padding: 90px 0 100px
+	&:before {
+		content: "";
+		transition: all 0.8s linear;
+		background-image: url("../images/ipad.png");
+		background-position: right -380px top 280px
+		background-size: auto
+		background-repeat: no-repeat
+		opacity: 0
+		position: absolute
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+	}
+	&_img-animate {
+		&:before {
+			background-position: right -380px top 220px
+			opacity: 1
+		}
+	}
+
+	&__title
+		margin-bottom: 85px
+
+	&__description
+		text-align: left
+		width: 54%
+	
+	&__description-heading
+		margin-bottom: 18px
+
+	&__description-title
+		margin-bottom: 20px
+
+	&__list-item
+		display: flex
+		align-items: center
+		margin-bottom: 14px
+		&:nth-child(1)
+			.project__list-img
+				background-image: url("../images/icon-basket.png")
+		&:nth-child(2)
+			.project__list-img
+				background-image: url("../images/icon-laptop.png")
+		&:nth-child(3)
+			.project__list-img
+				background-image: url("../images/icon-locked.png")
+
+	&__list-img
+		background-repeat: no-repeat
+		background-position: center
+		border: 3px solid black
+		border-radius: 50%
+		margin-right: 20px
+		height: $project-list-img-size
+		width: $project-list-img-size
